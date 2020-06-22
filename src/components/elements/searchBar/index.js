@@ -18,7 +18,6 @@ const SearchBar = props => {
     async function handleSearch(event) {
         try {
             event.preventDefault();
-            console.log(props);
 
             if(history.location.pathname !== '/'){
                 history.push('/');
