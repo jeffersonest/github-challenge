@@ -1,0 +1,53 @@
+@import '../../../styles/colors';
+
+.card { 
+    padding: 15px;
+
+    .card-content {
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 100px;
+        background-color: #fff;
+        border: 1px solid $light-gray-color;
+        border-radius: 3px;
+
+        .card-divisor{
+            width: 85%;
+            hr {
+                border: none;
+                border-top: 1px solid $light-gray-color;
+            }
+        } 
+        
+        .card-thumb-container {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 80px;
+                border-radius: 40px;
+            }
+
+            a {
+                font-size: 22px;
+                font-weight: 600;
+                text-decoration: none;
+                cursor: pointer;
+                display: block;
+                
+                color: $black-blue-color;
+                text-transform: capitalize;
+            }
+        }
+
+        .card-options {
+            padding-top: 15px;
+        }
+    }
+}
+  
