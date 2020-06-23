@@ -1,4 +1,5 @@
 export const search = (payload) => {
+    console.log('PAYLOAD', payload)
     return {
         type: 'SEARCH',
         payload

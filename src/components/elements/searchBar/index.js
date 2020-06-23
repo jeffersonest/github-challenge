@@ -33,6 +33,7 @@ const SearchBar = props => {
                 toast.error(Message(2));
             }
         } catch (error) {
+            console.log(error)
             toast.error(error.message);
         }
     }
