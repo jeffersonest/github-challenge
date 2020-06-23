@@ -1,4 +1,7 @@
 # Github challenge
+### (https://githubchallenge.netlify.app)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c98bf67d-7373-4ffc-809c-7cf9ac7d81a6/deploy-status)](https://app.netlify.com/sites/githubchallenge/deploys)
 
 Application developed to test the integration of react with github API V3.
 
@@ -59,7 +62,9 @@ Application developed to test the integration of react with github API V3.
     
         yarn start
         
-### 5. Deploy:
+### 5. Tests (Pending)
+        
+### 6. Deploy:
 
   1- To deploy the App, use:
     
