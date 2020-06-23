@@ -14,7 +14,7 @@ const ReposList = () => {
                 {repos.map((repo, index)=> {
                     return (
                     <li key={index}>
-                        <a href={repo.html_url}><span></span><FontAwesomeIcon icon={faCodeBranch} /> {repo.name}</a>
+                        <a className="text-dots" href={repo.html_url}><span></span><FontAwesomeIcon icon={faCodeBranch} /> {repo.name}</a>
                     </li> 
                     )
                 })}

@@ -60,6 +60,11 @@ html, body {
       margin: 10px 0;
       padding: 10px;
 
+      a {
+        color: $black-blue-color;
+        text-decoration: none;
+      }
+
     }
   }
 }
@@ -139,6 +144,8 @@ html, body {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 95%;
+  display: block;
 }
 
 .true {
