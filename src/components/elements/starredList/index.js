@@ -10,7 +10,7 @@ const StarredList = () => {
     return (
         <div className="custom-list-container">
             <ul className="custom-list">
-                <li className={`${(starred.length >= 0)}`}>Don't have!</li>
+                <li className={`${(starred.length <= 0)}`}>Don't have!</li>
                 {starred.map((repo, index)=> {
                     return (
                     <li key={index}>
