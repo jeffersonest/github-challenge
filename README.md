@@ -1,68 +1,71 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Github challenge
 
-## Available Scripts
+Application developed to test the integration of react with github API V3.
 
-In the project directory, you can run:
+### 1.External Libs:
 
-### `yarn start`
+  - [React] (https://github.com/facebook/react)
+  - [React scripts] (https://github.com/facebook/create-react-app/tree/master/packages/react-scripts)
+  - [Redux] (https://github.com/reduxjs/redux)
+  - [React Redux] (https://github.com/reduxjs/react-redux)
+  - [Axios] (https://github.com/axios/axios)
+  - [Nodesass] (https://github.com/sass/node-sass)
+  - [Font Awesome] (https://github.com/FortAwesome/Font-Awesome)
+  - [React Modal] (https://github.com/reactjs/react-modal)
+  - [Bootstrap] (https://github.com/twbs/bootstrap)
+  
+### 2. Architecture:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  - Flux:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+    <h1 align="center">
+      <img alt="Fastfeet" title="Fastfeet" src="https://cdn.scotch.io/scotchy-uploads/2014/10/rHwGUog.png" width="300px" />
+    </h1> 
+    
+### 3. App Components:
 
-### `yarn test`
+  - Layouts:
+    - Header : Have a Logo container and Search component.
+    - Main : It's a components container.
+    
+  - Pages:
+    - Home : Default page
+    - NotFound : Not found Page
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Elements:
+    - searchBar: used to input the github user thats will be searched
+    - starredList: list of user starred repos
+    - reposList: list of user repos
+    - starredModal: modal with starred infos
+    - reposModal: modal with repos infos
+    - userDetailsModal: modal with user info details
+    - userCard: card with user search info
+    - usersList: List of searched user, can be scalable to multiple users
+    
+ - Actions:
+    - SEARCH (loads the user info in [search] state)
+    - OPENLIST (shows the github user searched)
+    - LOADREPOS (loads the user repos to [repos] state)
+    - LOADSTARREDREPOS (loads the user repos to [starredrepos] state)
+    
+ - States:
+    - search
+    - repos
+    - starred
+        
+### 4. Starting the App:
 
-### `yarn build`
+  1- To start the app locally, use:
+    
+        yarn start
+        
+### 5. Deploy:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  1- To deploy the App, use:
+    
+        yarn build 
+        
+  2- Then get the dist folder generated and put in your webserver      
+  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+By Jefferson Estevam with ♥
