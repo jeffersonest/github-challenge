@@ -7,6 +7,8 @@ import { toast } from 'react-toastify';
 import { search, openList } from '../../../actions/search';
 import { useDispatch } from 'react-redux';
 import { createBrowserHistory } from "history";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 
 const SearchBar = props => {
@@ -46,7 +48,7 @@ const SearchBar = props => {
     return (
         <>
             <form onSubmit={handleSearch}>
-                <input name="username" placeholder="Username" onChange={(event) => {setUsername(TextClear(event.target.value))} } value={username}></input>
+            <FontAwesomeIcon className="searchbar-icon-position" icon={faSearch} /><input name="username" placeholder="Username" onChange={(event) => {setUsername(TextClear(event.target.value))} } value={username}></input>
             </form>
         </>
     );
