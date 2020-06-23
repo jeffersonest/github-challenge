@@ -33,7 +33,9 @@ const SearchBar = props => {
                 toast.error(Message(3));    
             } else if(users.status === 403 || users.status === 401) {
                 toast.error(Message(4));    
-            } 
+            } else {
+                toast.error('Problem with request!')
+            }
 
         } catch (error) {
             toast.error(error.message);

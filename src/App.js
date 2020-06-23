@@ -7,13 +7,13 @@ import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
-    <>
+    <div id="app">
       <ToastContainer position="bottom-right" />
       <Header />
       <Main>
         <Routes />
       </Main>  
-    </>
+    </div>
   );
 }
 
