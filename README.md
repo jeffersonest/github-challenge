@@ -58,7 +58,11 @@ Application developed to test the integration of react with github API V3.
         
 ### 4. Starting the App:
 
-  1- To start the app locally, use:
+  1- Install dependencies:
+  
+        yarn
+
+  2- To start the app locally, use:
     
         yarn start
         
