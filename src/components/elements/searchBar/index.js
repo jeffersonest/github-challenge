@@ -24,16 +24,18 @@ const SearchBar = props => {
             }
 
             const users = await SearchProvider(username);
-    
-            if(users) {
+            
+            if(users.status === 200) {
                 dispatch(search(users));
                 dispatch(openList());
                 toast.success(Message(1));
-            } else {
-                toast.error(Message(2));
-            }
+            } else if(users.status === 404) {
+                toast.error(Message(3));    
+            } else if(users.status === 403 || users.status === 401) {
+                toast.error(Message(4));    
+            } 
+
         } catch (error) {
-            console.log(error)
             toast.error(error.message);
         }
     }

@@ -10,6 +10,7 @@ const ReposList = () => {
     return (
         <div className="custom-list-container">
             <ul className="custom-list">
+                <li className={`${(repos.length <= 0)}`}>Don't have!</li>
                 {repos.map((repo, index)=> {
                     return (
                     <li key={index}>

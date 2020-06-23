@@ -8,6 +8,8 @@ export const Message = (code) => {
             return 'Problem with request!'
         case 3:
             return 'User not Found!'
+        case 4:
+            return 'API Request limit up 60!'            
         default:
             break;
     }
